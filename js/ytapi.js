@@ -3,8 +3,9 @@
 
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
-    var str = JSON.stringify(response.result);
+    var str = response.result;
     $('.container').html('<pre>' + str + '</pre>');
+    console.log(str)
 }
 
 // Called automatically when JavaScript client library is loaded.
